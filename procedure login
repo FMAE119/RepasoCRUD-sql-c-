@@ -1,0 +1,14 @@
+CREATE PROCEDURE login
+@DNI char(8),
+@Numero_de_celular varchar(9),
+@admin int output,
+@validacion int output
+as
+if (@DNI='73325726')
+begin
+    if (@Numero_de_celular='957841815')
+    begin
+    set @admin=1
+    set @validacion=1
+    end
+end
